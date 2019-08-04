@@ -1,8 +1,5 @@
 package com.jvm;
 
-import javax.xml.bind.SchemaOutputResolver;
-import java.net.SocketTimeoutException;
-
 /**
  * @Description :
  * @Author : jiangpan

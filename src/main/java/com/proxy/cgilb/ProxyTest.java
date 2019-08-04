@@ -1,11 +1,10 @@
 package com.proxy.cgilb;
+import com.proxy.study.jdk.huangniuInterface;
+import sun.misc.ProxyGenerator;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
-
-import com.proxy.study.jdk.huangniuInterface;
-
-import sun.misc.ProxyGenerator;
 
 
 

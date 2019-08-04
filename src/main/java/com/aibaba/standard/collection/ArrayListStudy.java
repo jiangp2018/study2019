@@ -38,7 +38,7 @@ public class ArrayListStudy {
         arrayList.size();
         System.out.println(arrayList.remove(1));
         System.out.println(list.toString());
-        System.out.println("暖宝宝不不    ");
+        System.out.println("暖宝宝不不 ");
     }
 
     @Test
@@ -97,7 +97,6 @@ public class ArrayListStudy {
     public void ArraySizeGrop(){
         List<Integer> arrays = new ArrayList<>(6);
         for (int i = 0; i < 10; i++) {
-
             if (i == 6) {
                 arrays.add(i);
             } else  {

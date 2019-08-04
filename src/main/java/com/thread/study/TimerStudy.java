@@ -1,23 +1,18 @@
 package com.thread.study;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import javax.management.timer.TimerMBean;
-
-import org.junit.Test;
-
 /*
- * ¢Ù ×Ô¼ºµ÷ÓÃ×Ô¼º£¬
- * 2£ºnum%2 È¡Ä£ÔËÐÐ
- * Timer ¶¨Ê±µ÷¶ÈÆ÷£¬  Timer¡£schedlu(Timertask ,Ê±¼ä £¬ÑÓ³ÙÊ±¼ä)
- * TimerTask ¶¨Ê±µ÷¶ÈÈÎÎñ 
+ * ï¿½ï¿½ ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½
+ * 2ï¿½ï¿½num%2 È¡Ä£ï¿½ï¿½ï¿½ï¿½
+ * Timer ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  Timerï¿½ï¿½schedlu(Timertask ,Ê±ï¿½ï¿½ ï¿½ï¿½ï¿½Ó³ï¿½Ê±ï¿½ï¿½)
+ * TimerTask ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
  */
 
 public class TimerStudy {
-	// Å¼ÊýÊÇ7 £¬¼¼ÊõÊÇ3  
+	// Å¼ï¿½ï¿½ï¿½ï¿½7 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3  
 	 static int  count=0;
 	 static int num =0;
 	public static void main(String[] args){		
@@ -25,7 +20,7 @@ public class TimerStudy {
 		// TimerTest2();
 		
 	}
-	 //Ñ­»·±¬Õ¨
+	 //Ñ­ï¿½ï¿½ï¿½ï¿½Õ¨
 	public static void myTimerTest3() {
 		final Timer timer = new Timer();
 		// TimerTask tt = new TimerTask() ;
@@ -38,17 +33,17 @@ public class TimerStudy {
 		//	Calendar.getInstance().get
 			++num;	
 			System.out.println(new Date().getSeconds());
-			System.out.println("ÎÒµÄµÚ¶þ¸ö¶¨Ê±ÈÎÎñ");
+			System.out.println("ï¿½ÒµÄµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½");
 			new Timer().schedule(new myTimer(), 3000+(3000*(num%2)));
 		}
 	}
 	 
 	 
 	 
-	 // ½»ÌæÕ¨ £¬3£¬ 7 £¬3 £¬ 7 £¬ 3 £¬7
+	 // ï¿½ï¿½ï¿½ï¿½Õ¨ ï¿½ï¿½3ï¿½ï¿½ 7 ï¿½ï¿½3 ï¿½ï¿½ 7 ï¿½ï¿½ 3 ï¿½ï¿½7
 	// @Test
 	public  static void  TimerTest2(){
-		// Å¼ÊýÊÇ7 £¬¼¼ÊõÊÇ3  
+		// Å¼ï¿½ï¿½ï¿½ï¿½7 ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½3  
 		Timer timer = new Timer();
 	    TimerTask task = new TimerTask() {
 	    
@@ -59,7 +54,7 @@ public class TimerStudy {
 			}
 		/*	++count;
 			num=count%2;
-			System.out.println("num="+ num +"ÎÒµÄµÚ¶þ¸ö¶¨Ê±ÈÎÎñ");*/
+			System.out.println("num="+ num +"ï¿½ÒµÄµÚ¶ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½");*/
 		};
 		timer.schedule(task, 2000, 2000+(2000*(num/2)));
 	}

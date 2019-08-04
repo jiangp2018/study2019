@@ -1,7 +1,5 @@
 package com.gpProxy.study;
 
-import java.io.*;
-
 //�������ɡ����롢���¶�̬load��JVM
 public class GPClassLoder extends ClassLoader {
     private File baseFile;
